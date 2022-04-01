@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs')
 const router = require("express").Router();
-const { checkUsernameExists, validateRoleName, restricted } = require('./auth-middleware');
+const { checkUsernameExists, validateRoleName} = require('./auth-middleware');
 const { BCRYPT_ROUNDS } = require("../secrets"); // use this secret!
 const User = require('../users/users-model.js')
 const makeToken = require('./token-builder')
